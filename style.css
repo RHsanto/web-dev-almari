@@ -83,7 +83,9 @@ nav ul li {
 a {
   text-decoration: none;
 }
-
+p {
+  line-height: 25px;
+}
 /* Banner items */
 .banner_sec {
   display: flex;
@@ -101,7 +103,6 @@ a {
 }
 .banner_desc p {
   padding: 10px 0;
-  line-height: 25px;
 }
 .btn_grp {
   padding: 20px 0px;
@@ -134,7 +135,8 @@ a {
 }
 
 /* what I do section */
-.what_section {
+.what_section,
+.resume_section {
   margin-top: 130px;
 }
 
@@ -148,9 +150,39 @@ a {
 .card h1 {
   padding: 30px 0 20px 0;
 }
-.card p {
-  line-height: 25px;
+
+.r_card_headers {
+  margin-top: 113px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 30px;
+  gap: 25px;
 }
+.r_card_headers h1 {
+  font-size: 30px;
+  text-align: start;
+}
+.resume_cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+.r_card {
+  text-align: start;
+  border-bottom: none;
+}
+.r_card p {
+  padding: 20px 0px 30px 0px;
+}
+
+.r_card:nth-child(-n + 4) {
+  border-bottom: 2px solid #d1d1d1;
+}
+.resume_down {
+  margin: 50px 0;
+}
+/* Resume Section */
+
 /* Responsive Design css */
 
 /* Tablet এর জন্য (width 768px এর কম) */
