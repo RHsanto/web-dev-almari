@@ -1,19 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oranienbaum&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oranienbaum&display=swap");
+* {
   margin: 0;
   padding: 0;
+  font-family: "Open Sans";
 }
 
-/* Shared color */
+/* Shared css*/
 
-.primary_color{
-  color: #FD6E0A;
+.primary_color {
+  color: #fd6e0a;
 }
-.dark_2{
-  color:#474747
-}.primary_btn, .contact_btn{
+.dark_1 {
+  color: #181818;
+}
+.dark_2 {
+  color: #474747;
+}
+.dark_3 {
+  color: #757575;
+}
+.primary_Bclr {
+  background-color: #fff8f3;
+}
+.primary_btn,
+.contact_btn {
   border: none;
-  background-color: #FD6E0A;
+  background-color: #fd6e0a;
   padding: 18px 36px;
   font-weight: bold;
   font-size: 20px;
@@ -22,78 +34,135 @@
   cursor: pointer;
 }
 
-.container{
-  max-width: 1140px;
-  align-items: center;
-  justify-content: center;
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.section_title {
+  font-size: 35px;
+  font-weight: bold;
+}
+.section_pera {
+  font-size: 18px;
+  color: #757575;
 }
 /* Header */
 
-header{
+header {
   background-image: url("./images/developer.png"), url("./images/header_bg.png");
   background-repeat: no-repeat;
-  background-position: top left , bottom right;
-  margin: 20px 0px 0px 30px ;
+  background-position: top left, bottom right;
 }
 /* Nav items */
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   padding: 20px 200px;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
 }
-.nav_title{
-font-size: 45px;
-font-weight: 800;
-
+.nav_title {
+  font-size: 45px;
+  font-weight: 800;
 }
 
-nav ul{
- display: flex;
- list-style: none;
- align-items: center;
-
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
 }
 nav ul li {
-   margin-right: 50px;
+  margin-right: 50px;
 }
-a{
+a {
   text-decoration: none;
 }
 
 /* Banner items */
-.banner_sec{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 10px 25px 0 200px;
-
-}
-.banner_desc, .banner_img{
-  width: 585px;
+.banner_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 25px 0 200px;
 }
 
-.banner_desc h3{
-font-size: 45px;
+.banner_desc h3 {
+  font-size: 45px;
 }
-.banner_desc h1{
-font-size: 85px;
-padding: 10px 0px 20px;
+.banner_desc h1 {
+  font-size: 85px;
+  padding: 10px 0px 20px;
 }
-.banner_desc p{
-  font-size: 18px;
-  color: #757575;
+.banner_desc p {
   padding: 10px 0;
   line-height: 25px;
 }
-.btn_grp{
+.btn_grp {
   padding: 20px 0px;
- 
 }
-.contact_btn{
-background-color: white;
-color: #FD6E0A;
-border: 1px solid #FD6E0A;
-margin-left: 20px;
+.contact_btn {
+  background-color: white;
+  color: #fd6e0a;
+  border: 1px solid #fd6e0a;
+  margin-left: 20px;
+}
+/* about_section */
+.about_sec {
+  margin: 130px 230px;
+  padding: 130px 150px;
+  border-radius: 5px;
+}
+.about_desc p {
+  padding: 30px 10px;
+  line-height: 30px;
+}
+.about_desc {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.about_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 22px;
+}
+
+.info_title,
+.info_value {
+  font-size: 20px;
+}
+/* Responsive Design css */
+
+/* Tablet এর জন্য (width 768px এর কম) */
+@media (max-width: 768px) {
+}
+
+/* Mobile এর জন্য (width 480px এর কম) */
+@media (max-width: 768px) {
+  header {
+    background-image: none;
+  }
+  nav {
+    margin: 0px;
+    padding: 10px;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  .banner_sec {
+    display: block;
+    padding: 20px;
+    margin: 50px 0px;
+  }
+
+  .banner_img {
+    width: 100%;
+  }
+  .banner_desc h3 {
+    font-size: 25px;
+  }
+  .banner_desc h1 {
+    font-size: 40px;
+  }
 }
