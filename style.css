@@ -158,26 +158,30 @@ p {
   margin-bottom: 30px;
   gap: 25px;
 }
-.r_card_headers h1 {
-  font-size: 30px;
-  text-align: start;
-}
+
 .resume_cards,
 .footer_sec {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+  text-align: start;
+  margin-top: 50px;
+}
+.resume_title {
+  margin: 50px 0 20px 0;
 }
 .r_card {
   text-align: start;
   border-bottom: none;
+  margin-top: 30px;
 }
+
 .r_card p,
 .footer_sec p {
   padding: 20px 0px 30px 0px;
 }
 
-.r_card:nth-child(-n + 4) {
+.r_card:nth-child(-n + 3) {
   border-bottom: 2px solid #d1d1d1;
 }
 .resume_down {
@@ -211,6 +215,9 @@ textarea {
 
 /* Mobile এর জন্য (width 480px এর কম) */
 @media (max-width: 768px) {
+  * {
+    margin: 05px;
+  }
   header {
     background-image: none;
   }
@@ -219,7 +226,13 @@ textarea {
     padding: 10px;
   }
   nav ul li {
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+  .primary_btn {
+    padding: 10px;
+  }
+  .container {
+    width: 100%;
   }
   .banner_sec {
     display: block;
@@ -235,5 +248,28 @@ textarea {
   }
   .banner_desc h1 {
     font-size: 40px;
+  }
+  /* .about_sec  */
+
+  .about_sec,
+  .footer_sec {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .about_info,
+  .card_grp,
+  .resume_cards,
+  .footer_sec {
+    display: block;
+    margin: 20px;
+  }
+  .card_grp .card {
+    margin-bottom: 30px;
+  }
+
+  input,
+  textarea {
+    width: 50%;
   }
 }
